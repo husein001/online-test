@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Tests;
+use App\Question;
 use Illuminate\Http\Request;
 
-class TestsController extends Controller
+class QuestionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class TestsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Tests  $tests
+     * @param  \App\Question  $questions
      * @return \Illuminate\Http\Response
      */
-    public function show(Tests $tests)
+    public function show(Question $questions)
     {
         //
     }
@@ -52,10 +52,10 @@ class TestsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Tests  $tests
+     * @param  \App\Question  $questions
      * @return \Illuminate\Http\Response
      */
-    public function edit(Tests $tests)
+    public function edit(Question $questions)
     {
         //
     }
@@ -64,10 +64,10 @@ class TestsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Tests  $tests
+     * @param  \App\Question  $questions
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Tests $tests)
+    public function update(Request $request, Question $questions)
     {
         //
     }
@@ -75,10 +75,10 @@ class TestsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Tests  $tests
+     * @param  \App\Question  $questions
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Tests $tests)
+    public function destroy(Question $questions)
     {
         //
     }
