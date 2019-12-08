@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Categories;
+use App\Tests;
 use Illuminate\Http\Request;
 
-class CategoriesController extends Controller
+class TestsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class CategoriesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Categories  $categories
+     * @param  \App\Tests  $tests
      * @return \Illuminate\Http\Response
      */
-    public function show(Categories $categories)
+    public function show(Tests $tests)
     {
         //
     }
@@ -52,10 +52,10 @@ class CategoriesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Categories  $categories
+     * @param  \App\Tests  $tests
      * @return \Illuminate\Http\Response
      */
-    public function edit(Categories $categories)
+    public function edit(Tests $tests)
     {
         //
     }
@@ -64,10 +64,10 @@ class CategoriesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Categories  $categories
+     * @param  \App\Tests  $tests
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Categories $categories)
+    public function update(Request $request, Tests $tests)
     {
         //
     }
@@ -75,10 +75,10 @@ class CategoriesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Categories  $categories
+     * @param  \App\Tests  $tests
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Categories $categories)
+    public function destroy(Tests $tests)
     {
         //
     }
