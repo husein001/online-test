@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
+use App\Test;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +25,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $tests = Test::whereHas('questions', function($q){
+            $q->whereHas('answers');
+        })
+            ->with('questions','questions.answers')
+            ->orderByDesc('created_at')
+            ->limit(3)
+            ->get();
+        $categories = Category::all();
+        return view('index')->with(['tests' => $tests, 'categories' => $categories]);
     }
 }
