@@ -13,10 +13,10 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+//    public function __construct()
+//    {
+//        $this->middleware('auth');
+//    }
 
     /**
      * Show the application dashboard.
@@ -33,6 +33,6 @@ class HomeController extends Controller
             ->limit(3)
             ->get();
         $categories = Category::all();
-        return view('index')->with(['tests' => $tests, 'categories' => $categories]);
+        return view('client.main.index')->with(['tests' => $tests, 'categories' => $categories]);
     }
 }
